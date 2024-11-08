@@ -17,7 +17,7 @@ const Features = () => {
                         Create content faster <br /> and smarter
                     </h2>
                     <p className="text-base md:text-lg text-center text-accent-foreground/80 mt-6">
-                        Transform your social media strategy with Luro AI&apos;s cutting-edge features, designed to optimize your content creation and engagement like never before.
+                        Transform your social media strategy with SentStreamAI&apos;s cutting-edge features, designed to optimize your content creation and engagement like never before.
                     </p>
                 </div>
             </Container>
