@@ -6,9 +6,9 @@ import { Toaster } from "@/components/ui/sonner";
 export const metadata = generateMetadata();
 
 export default function RootLayout({
-    children,
+  children,
 }: Readonly<{
-    children: React.ReactNode;
+  children: React.ReactNode;
 }>) {
     return (
         <html lang="en" suppressHydrationWarning>
