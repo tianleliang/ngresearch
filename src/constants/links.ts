@@ -46,40 +46,27 @@ export const SIDEBAR_LINKS: Link[] = [
 
 export const FOOTER_LINKS = [
     {
-        title: "Product",
+        title: "Learn More",
         links: [
             { name: "Home", href: "/" },
-            { name: "Features", href: "/" },
-            { name: "Pricing", href: "/" },
-            { name: "Contact", href: "/" },
-            { name: "Download", href: "/" },
+            { name: "About Us", href: "/" },
+            { name: "Journal", href: "/" },
+            { name: "Apply Here", href: "/" },
+            { name: "NIRP", href: "/" },
         ],
     },
     {
-        title: "Resources",
+        title: "Important Links",
         links: [
-            { name: "Blog", href: "/blog" },
-            { name: "Help Center", href: "/help-center" },
-            { name: "Community", href: "/community" },
-            { name: "Guides", href: "/guides" },
+            { name: "Journal Disc", href: "/blog" },
+            { name: "Privacy Policy", href: "/help-center" },
+            { name: "Terms of Service", href: "/community" },
         ],
     },
     {
-        title: "Legal",
+        title: "Contact",
         links: [
-            { name: "Privacy", href: "/privacy" },
-            { name: "Terms", href: "/terms" },
-            { name: "Cookies", href: "/cookies" },
-        ],
-    },
-    {
-        title: "Developers",
-        links: [
-            { name: "API Docs", href: "/api-docs" },
-            { name: "SDKs", href: "/sdks" },
-            { name: "Tools", href: "/tools" },
-            { name: "Open Source", href: "/open-source" },
-            { name: "Changelog", href: "/changelog" },
+            { name: "contact@nextgenresearch.org", href: "/privacy" },
         ],
     },
 ];

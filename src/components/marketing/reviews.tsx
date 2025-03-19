@@ -11,14 +11,11 @@ const Reviews = () => {
     return (
         <div className="flex flex-col items-center justify-center py-12 md:py-16 lg:py-24  w-full">
             <Container>
-                <div className="flex flex-col items-center text-center max-w-xl mx-auto">
-                    <SectionBadge title="Our Customers" />
+                <div className="flex flex-col items-center text-center max-w-3xl mx-auto">  
                     <h2 className="text-2xl md:text-4xl lg:text-5xl font-heading font-medium !leading-snug mt-6">
-                        What our customers say
+                        Dont take our word for it. Hear
+                        what our students have to say
                     </h2>
-                    <p className="text-base md:text-lg text-center text-accent-foreground/80 mt-6">
-                        We are proud to have helped thousands of customers across the globe. Here are some of their stories
-                    </p>
                 </div>
             </Container>
             <Container>

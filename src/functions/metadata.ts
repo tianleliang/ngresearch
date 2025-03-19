@@ -17,7 +17,7 @@ interface MetadataProps {
 }
 
 export const generateMetadata = ({
-    title = `${process.env.NEXT_PUBLIC_APP_NAME} - Smart Social Media Marketing Platform`,
+    title = "NextGen Research Institute",
     description = "Streamline your social media management with AI-powered analytics, scheduling, and content optimization. Get real-time insights, automate posts, and boost engagement across all platforms",
     image = "/thumbnail.png",
     icons = [
@@ -25,13 +25,13 @@ export const generateMetadata = ({
             rel: "icon",
             type: "image/png",
             sizes: "32x32",
-            url: "/icons/favicon-32x32.png"
+            url: "/icons/NextGen Research Institute.png"
         },
         {
             rel: "icon",
             type: "image/png",
             sizes: "16x16",
-            url: "/icons/favicon-16x16.png"
+            url: "/icons/NextGen Research Institute.png"
         },
     ],
     noIndex = false,
