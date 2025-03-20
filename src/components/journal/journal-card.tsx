@@ -28,6 +28,8 @@ export function JournalCard({ title, description, link, className }: JournalEdit
                 </p>
                 <a 
                     href={link} 
+                    target="_blank" 
+                    rel="noopener noreferrer" 
                     className="inline-flex items-center text-primary font-medium mt-auto pt-4 hover:opacity-80 transition-opacity"
                 >
                     View Journal Issue

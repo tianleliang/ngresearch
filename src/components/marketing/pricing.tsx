@@ -14,7 +14,15 @@ type Plan = "monthly" | "yearly";
 
 const Pricing = () => {
     return (
-        <div className="flex flex-col items-center justify-center py-12 md:py-16 lg:py-24  w-full relative">
+        <div className="flex flex-col items-center justify-center py-12 md:py-16 lg:py-24 w-full relative">
+            <div className="text-center mb-8">
+                <h2 className="text-3xl md:text-4xl font-medium mb-3">
+                    Choose Your Research Plan
+                </h2>
+                <p className="text-muted-foreground text-lg">
+                    (Fun Fact: Our closest alternative charges $4,000)
+                </p>
+            </div>
             
             <div className="mt-8 w-full relative flex flex-col items-center justify-center">
                 <div className="absolute hidden lg:block top-1/2 right-2/3 translate-x-1/4 -translate-y-1/2 w-96 h-96 bg-primary/15 blur-[10rem] -z-10"></div>

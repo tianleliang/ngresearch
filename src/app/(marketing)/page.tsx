@@ -1,5 +1,6 @@
 import { Background, Companies, Connect, Container, CTA, Features, Hero, Perks, Pricing, Reviews, Wrapper } from "@/components";
 import WhyChoose from "@/components/marketing/why-choose";
+
 const HomePage = () => {
     return (
         <Background>
@@ -13,6 +14,7 @@ const HomePage = () => {
                 <Features />
                 <WhyChoose />
                 <Reviews />
+              
               
             </Wrapper>
         </Background>

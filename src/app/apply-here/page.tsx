@@ -1,5 +1,5 @@
 import { Pricing } from "@/components";
-
+import { Faq3Demo } from "@/components/blocks/faq3-demo";
 export default function ApplyHere() {
     return (
         <div className="flex flex-col items-center justify-center min-h-screen py-12 md:py-16 lg:py-24">
@@ -12,6 +12,7 @@ export default function ApplyHere() {
                 </p>
 
                 <Pricing />
+                <Faq3Demo />
             </div>
         </div>
     )
