@@ -45,29 +45,24 @@ const Navbar = () => {
                                 <Icons.icon className="w-auto h-5" />
                             </Link>
                             <div className="items-center hidden ml-4 lg:flex">
-                                <Menu />
+                                <h1>NextGen Research Institute</h1>
                             </div>
                         </div>
                         <div className="items-center flex gap-2 lg:gap-4">
-                                    <Button size="sm" variant="tertiary" asChild className="hover:translate-y-0 hover:scale-100">
-                                        <Link href="/auth/signin">
-                                            Login
-                                        </Link>
-                                    </Button>
-                                    <Button size="sm" variant="white" asChild className="hidden sm:flex">
-                                        <Link href="/auth/signup">
-                                            Start for free
-                                            <ArrowRightIcon className="w-4 h-4 ml-2 hidden lg:block" />
-                                        </Link>
-                                    </Button>
-                            <Button
-                                size="icon"
-                                variant="ghost"
-                                onClick={() => setIsOpen((prev) => !prev)}
-                                className="lg:hidden p-2 w-8 h-8"
-                            >
-                                {isOpen ? <XIcon className="w-4 h-4 duration-300" /> : <Icons.menu className="w-3.5 h-3.5 duration-300" />}
-                            </Button>
+                        <nav className="flex items-center space-x-6">
+                                    <Link href="/about-us" className="text-sm text-gray-300 hover:text-white">
+                                        About Us
+                                    </Link>
+                                    <Link href="/journal" className="text-sm text-gray-300 hover:text-white">
+                                        Journal
+                                    </Link>
+                                    <Link href="/apply-here" className="text-sm text-gray-300 hover:text-white">
+                                        Apply Here
+                                    </Link>
+                                    <Link href="/nirp" className="text-sm text-gray-300 hover:text-white">
+                                        NIRP
+                                    </Link>
+                                </nav>
                         </div>
                     </div>
                     <MobileMenu isOpen={isOpen} setIsOpen={setIsOpen} />

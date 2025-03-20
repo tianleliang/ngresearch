@@ -1,5 +1,5 @@
 import React from 'react';
-import { Navbar, Footer } from "@/components";
+import { Navbar } from "@/components";
 
 interface Props {
     children: React.ReactNode
@@ -13,7 +13,7 @@ const MarketingLayout = ({ children }: Props) => {
             <main className="mx-auto w-full z-40 relative">
                 {children}
             </main>
-            <Footer />
+            
         </>
     );
 };

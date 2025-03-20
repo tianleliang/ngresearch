@@ -2,6 +2,7 @@ import "@/styles/globals.css";
 import { cn, generateMetadata } from "@/functions";
 import { inter, satoshi } from "@/constants";
 import { Toaster } from "@/components/ui/sonner";
+import { Footer, Navbar } from "@/components";
 
 export const metadata = generateMetadata();
 
@@ -24,7 +25,11 @@ export default function RootLayout({
                     theme="dark"
                     position="top-right"
                 />
-            {children}
+                 <Navbar />
+                 <main className="mx-auto w-full z-40 relative">
+                    {children}
+                </main>
+                <Footer />
             </body>
         </html>
     );

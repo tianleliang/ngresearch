@@ -9,24 +9,13 @@ import Link from "next/link";
 import Container from "../global/container";
 import { Button } from "../ui/button";
 import NumberTicker from "../ui/number-ticker";
-import { SectionBadge } from "../ui/section-bade";
 
 type Plan = "monthly" | "yearly";
 
 const Pricing = () => {
     return (
         <div className="flex flex-col items-center justify-center py-12 md:py-16 lg:py-24  w-full relative">
-            <Container>
-                <div className="flex flex-col items-center text-center max-w-xl mx-auto">
-                    <SectionBadge title="Choose your plan" />
-                    <h2 className="text-2xl md:text-4xl lg:text-5xl font-heading font-medium !leading-snug mt-6">
-                        Simple and transparent pricing
-                    </h2>
-                    <p className="text-base md:text-lg text-center text-accent-foreground/80 mt-6">
-                        Choose the plan that suits your needs. No hidden fees, no surprises.
-                    </p>
-                </div>
-            </Container>
+            
             <div className="mt-8 w-full relative flex flex-col items-center justify-center">
                 <div className="absolute hidden lg:block top-1/2 right-2/3 translate-x-1/4 -translate-y-1/2 w-96 h-96 bg-primary/15 blur-[10rem] -z-10"></div>
                 <div className="absolute hidden lg:block top-1/2 left-2/3 -translate-x-1/4 -translate-y-1/2 w-96 h-96 bg-violet-500/15 blur-[10rem] -z-10"></div>
@@ -138,7 +127,7 @@ const Plan = ({
                             </span>
                             {/* In here 120 * 0.8 = 96 and /12 to get monthly price */}
                             <span className="text-lg text-muted-foreground font-medium font-headin">
-                                per {plan === "monthly" ? "month" : "month"}
+                                per {plan === "monthly" ? "appl." : "month"}
                             </span>
                         </div>
                         <AnimatePresence>

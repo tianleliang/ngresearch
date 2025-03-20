@@ -13,59 +13,33 @@ type PLAN = {
 export const PLANS: PLAN[] = [
     {
         id: "free",
-        title: "Free",
-        desc: "Get started with essential tools for social media content creation",
-        monthlyPrice: 0,
+        title: "NextGen Research Application",
+        desc: "Holistic application review for those WITHOUT independent research paper",
+        monthlyPrice: 29.99,
         yearlyPrice: 0,
-        buttonText: "Get Started",
+        buttonText: "Apply Now",
         features: [
-            "Basic AI content generation",
-            "4 social media integrations",
-            "Community support",
-            "1 project limit",
-            "Standard analytics",
-            "Basic image generation"
+            "Application review and university connection",
+            "Connection with college professor, graduate student mentor, or related startup",
+            "Personal NextGen mentorship from Ivy League students",
+            "Access to NextGen's advisory board with T20 professors and industry professionals"
         ],
-        link: "https://stripe.com/free-plan-link"
+        link: "https://2i5f6gbrotk.typeform.com/to/TunzuzZm?typeform-source=www.ngresearch.org"
     },
     {
         id: "pro",
-        title: "Pro",
-        desc: "Unlock advance features for enhanced content and strategy",
-        monthlyPrice: 10,
+        title: "Paper Publication",
+        desc: "For those WITH independent research paper",
+        monthlyPrice: 49.99,
         yearlyPrice: 120,
         badge: "Most Popular",
-        buttonText: "Upgrade to Pro",
+        buttonText: "Apply Now",
         features: [
-            "Advanced AI content generation",
-            "10 social media integrations",
-            "Priority email support",
-            "10 project limit",
-            "Enhanced analytics & insights",
-            "Pro model image generation",
-            "Team collaboration tools",
-            "Custom branding options"
+            "Publication in journal",
+            "Connection with college professor",
+            "Personal NextGen mentorship from Ivy League Students",
+            "Detailed feedback on independent paper"
         ],
-        link: "https://stripe.com/pro-plan-link"
-    },
-    {
-        id: "enterprise",
-        title: "Enterprise",
-        desc: "Tailored solutions for large organizations and agencies",
-        monthlyPrice: 15,
-        yearlyPrice: 180,
-        badge: "Contact Sales",
-        buttonText: "Upgrade to Enterprise",
-        features: [
-            "Unlimited AI content generation",
-            "All social media integrations",
-            "Dedicated account manager",
-            "Unlimited projects",
-            "Custom analytics & reporting",
-            "Enterprise-grade security",
-            "Free updates",
-            // "24/7 priority support"
-        ],
-        link: "https://stripe.com/enterprise-plan-link"
+        link: "https://docs.google.com/forms/d/e/1FAIpQLSdqXk1PBjhHQEa5UrQtWb7umW6WyA5PKWI93fkGgn9UuxfZUQ/viewform"
     }
 ];
