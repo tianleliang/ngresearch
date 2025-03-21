@@ -29,10 +29,10 @@ const WhyChoose = () => {
                                 </div>
                                 <div className="flex flex-col mt-auto">
                                     <h4 className="text-xl font-heading font-medium heading">
-                                        Content ideation
+                                    Publication Opportunities
                                     </h4>
                                     <p className="text-sm md:text-base mt-2 text-muted-foreground">
-                                        Generate ideas for your content with our AI-powered tools to create engaging posts in seconds.
+                                    Get your research papers published in our monthly journal.
                                     </p>
                                 </div>
                             </div>
@@ -47,10 +47,10 @@ const WhyChoose = () => {
                                     </div>
                                     <div className="flex flex-col">
                                         <h4 className="text-xl font-heading font-medium heading">
-                                            Get advanced analytics
+                                        Academic Connections
                                         </h4>
                                         <p className="text-sm md:text-base mt-2 text-muted-foreground">
-                                            Track your performance with detailed analytics and optimize to get better results.
+                                        Connect with professors and researchers from top universities.
                                         </p>
                                     </div>
                                 </div>
@@ -63,10 +63,10 @@ const WhyChoose = () => {
                                     </div>
                                     <div className="flex flex-col">
                                         <h4 className="text-xl font-heading font-medium heading">
-                                            Hashtags suggestions
+                                        Professional Development
                                         </h4>
                                         <p className="text-sm md:text-base mt-2 text-muted-foreground">
-                                            Get hashtag suggestions based on your content and audience to increase your reach and engagement.
+                                        Enhance your research skills and academic profile.
                                         </p>
                                     </div>
                                 </div>
