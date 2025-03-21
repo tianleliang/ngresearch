@@ -14,8 +14,6 @@ const HomePage = () => {
                 <Features />
                 <WhyChoose />
                 <Reviews />
-              
-              
             </Wrapper>
         </Background>
     )
