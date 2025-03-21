@@ -13,7 +13,7 @@ const WhyChoose = () => {
                     Why choose NextGen?
                     </h2>
                     <p className="text-base md:text-lg text-center text-accent-foreground/80 mt-6">
-                    NextGen Education LLC publishes high school students' research papers to reward them with college professor experiences.
+                    NextGen Education LLC publishes high school students&apos; research papers to reward them with college professor experiences.
                     </p>
                 </div>
             </Container>

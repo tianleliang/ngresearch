@@ -73,7 +73,7 @@ export default function NIRP() {
                                 </h2>
                                 <p className="text-muted-foreground text-base md:text-lg leading-relaxed">
                                     NIRP offers a structured approach for students to pursue their research interests effectively. 
-                                    Students who sign up can receive continuous feedback and editing support from NextGen's team 
+                                    Students who sign up can receive continuous feedback and editing support from NextGens team 
                                     whenever needed throughout the research process, enhancing their papers and increasing their 
                                     chances of acceptance into reputable journals.
                                 </p>
@@ -120,9 +120,9 @@ export default function NIRP() {
                     <div className="max-w-3xl mx-auto text-center">
                         <h2 className="text-2xl md:text-3xl font-medium mb-8">What Our Students Say</h2>
                         <blockquote className="text-lg md:text-xl text-muted-foreground/90 leading-relaxed italic mb-8">
-                            "The NextGen Independent Research Program has been instrumental in shaping my research journey. 
+                            &quot;The NextGen Independent Research Program has been instrumental in shaping my research journey. 
                             The guidance and feedback I received helped me refine my paper and secure publication in a 
-                            respected journal. I would highly recommend this program to any student serious about research."
+                            respected journal. I would highly recommend this program to any student serious about research.&quot;
                         </blockquote>
                         <div className="flex flex-col items-center gap-2">
                             <p className="font-medium">Michael Chen</p>

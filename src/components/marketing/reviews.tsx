@@ -36,7 +36,7 @@ const Reviews = () => {
                 </div>
 
                 <h2 className="text-3xl md:text-4xl lg:text-5xl font-heading font-medium !leading-[1.1] mb-6 bg-gradient-to-br from-foreground to-foreground/80 bg-clip-text text-transparent">
-                    Don't Take It From Us
+                    Don&apos;t Take It From Us
                 </h2>
                 <p className="text-lg md:text-xl text-muted-foreground/90 leading-relaxed max-w-2xl mx-auto">
                     Hear What Our Students Say About Their Experience
@@ -53,7 +53,7 @@ const Reviews = () => {
                         <div className="absolute -inset-px bg-gradient-to-r from-primary/20 to-violet-500/20 rounded-xl blur-sm opacity-0 transition-opacity"></div>
                         <div className="relative flex flex-col p-6 rounded-xl border border-border/60 bg-card/30 backdrop-blur-sm">
                             <p className="text-muted-foreground text-base leading-relaxed mb-6 italic">
-                                "{testimonial.quote}"
+                                &quot;{testimonial.quote}&quot;
                             </p>
                             <div className="mt-auto">
                                 <h3 className="text-lg font-medium bg-gradient-to-r from-foreground to-foreground/80 bg-clip-text text-transparent">

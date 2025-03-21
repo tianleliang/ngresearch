@@ -31,7 +31,7 @@ const NIRPStuff = () => {
                                         Research Guidance
                                         </h4>
                                         <p className="text-sm md:text-base mt-2 text-muted-foreground">
-                                        Receive expert guidance and support throughout your research journey with NextGen's experienced team.
+                                        Receive expert guidance and support throughout your research journey with NextGens experienced team.
                                         </p>
                                     </div>
                                 </div>
@@ -46,7 +46,7 @@ const NIRPStuff = () => {
                                             Networking Opportunities
                                         </h4>
                                         <p className="text-sm md:text-base mt-2 text-muted-foreground">
-                                        Connect with professors and experts in your research field through NextGen's journal, opening doors to potential collaborations and opportunities.
+                                        Connect with professors and experts in your research field through NextGens journal, opening doors to potential collaborations and opportunities.
                                         </p>
                                     </div>
                                 </div>
