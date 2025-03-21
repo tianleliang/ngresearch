@@ -1,6 +1,5 @@
 "use client";
 
-import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { PLANS } from "@/constants";
 import { cn } from "@/functions";
 import { AnimatePresence, motion } from "framer-motion";
@@ -28,40 +27,16 @@ const Pricing = () => {
                 <div className="absolute hidden lg:block top-1/2 right-2/3 translate-x-1/4 -translate-y-1/2 w-96 h-96 bg-primary/15 blur-[10rem] -z-10"></div>
                 <div className="absolute hidden lg:block top-1/2 left-2/3 -translate-x-1/4 -translate-y-1/2 w-96 h-96 bg-violet-500/15 blur-[10rem] -z-10"></div>
                 <Container>
-                    <Tabs defaultValue="monthly" className="w-full flex flex-col items-center justify-center">
-                        <TabsList>
-                            <TabsTrigger value="monthly">
-                                Monthly
-                            </TabsTrigger>
-                            <TabsTrigger value="yearly">
-                                Yearly
-                            </TabsTrigger>
-                        </TabsList>
-                        <TabsContent value="monthly">
-                            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 w-full mt-14">
-                                {PLANS.map((plan, index) => (
-                                    <Plan
-                                        key={index}
-                                        index={index}
-                                        {...plan}
-                                        plan="monthly"
-                                    />
-                                ))}
-                            </div>
-                        </TabsContent>
-                        <TabsContent value="yearly">
-                            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 w-full mt-14">
-                                {PLANS.map((plan, index) => (
-                                    <Plan
-                                        key={index}
-                                        index={index}
-                                        {...plan}
-                                        plan="yearly"
-                                    />
-                                ))}
-                            </div>
-                        </TabsContent>
-                    </Tabs>
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-6 w-full max-w-4xl mx-auto">
+                        {PLANS.map((plan, index) => (
+                            <Plan
+                                key={index}
+                                index={index}
+                                {...plan}
+                                plan="monthly"
+                            />
+                        ))}
+                    </div>
                 </Container>
             </div>
         </div>
@@ -78,6 +53,7 @@ const Plan = ({
     features,
     index,
     plan,
+    link,
 }: {
     id: string;
     title: string;
@@ -88,6 +64,7 @@ const Plan = ({
     features: string[];
     index: number;
     plan: Plan;
+    link: string;
 }) => {
 
     const getDisplayedPrice = (plan: string, monthlyPrice: number, yearlyPrice: number) => {
@@ -168,10 +145,9 @@ const Plan = ({
                     <Button
                         asChild
                         variant={id === "pro" ? "default" : "tertiary"}
-                        className="w-full hover:scale-100 hover:translate-y-0 shadow-none"
+                        className="w-full hover:scale-100 hover:translate-y-0 shadow-none text-center"
                     >
-
-                        <Link href={""}>
+                        <Link target="_blank" href={link} className="flex justify-center items-center">
                             {buttonText}
                         </Link>
                     </Button>

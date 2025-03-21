@@ -1,72 +1,77 @@
-import { REVIEWS } from "@/constants";
-import Container from "../global/container";
-import Marquee from "../ui/marquee";
-import { SectionBadge } from "../ui/section-bade";
-import Image from "next/image";
+import { Badge } from "../ui/badge";
 
-const firstRow = REVIEWS.slice(0, REVIEWS.length / 2);
-const secondRow = REVIEWS.slice(REVIEWS.length / 2);
+const testimonials = [
+    {
+        quote: "Connected me with amazing professors and research opportunities that transformed my academic journey.",
+        name: "Aneesh Chintala",
+        role: "Researcher at The University of Houston"
+    },
+    {
+        quote: "I am grateful for the chance to collaborate with top professionals in my field. NextGen opened doors I didn't know existed.",
+        name: "Shiva Uppaladhini",
+        role: "Research Assistant @ Purdue University"
+    },
+    {
+        quote: "The guidance and connections provided by NextGen have been invaluable to my research journey and academic growth.",
+        name: "Jeffrey Au",
+        role: "Research Assistant @ UH"
+    }
+];
 
 const Reviews = () => {
     return (
-        <div className="flex flex-col items-center justify-center py-12 md:py-16 lg:py-24  w-full">
-            <Container>
-                <div className="flex flex-col items-center text-center max-w-3xl mx-auto">  
-                    <h2 className="text-2xl md:text-4xl lg:text-5xl font-heading font-medium !leading-snug mt-6">
-                        Dont take our word for it. Hear
-                        what our students have to say
-                    </h2>
+        <section className="w-full py-20">
+            {/* Header */}
+            <div className="relative mb-16 text-center">
+                {/* Gradient background effect */}
+                <div className="absolute -inset-4 bg-gradient-to-r from-primary/10 to-violet-500/10 rounded-2xl blur-2xl opacity-75 -z-10"></div>
+                
+                <div className="flex items-center justify-center gap-4 mb-8">
+                    <Badge 
+                        variant="outline" 
+                        className="text-base px-4 py-1.5 border-primary/20 bg-primary/5"
+                    >
+                        Student Success Stories
+                    </Badge>
                 </div>
-            </Container>
-            <Container>
-                <div className="mt-16 w-full relative overflow-hidden">
-                    <div className="relative flex flex-col items-center justify-center overflow-hidden">
-                        <Marquee pauseOnHover className="[--duration:30s]">
-                            {firstRow.map((review) => (
-                                <ReviewCard key={review.username} {...review} />
-                            ))}
-                        </Marquee>
-                        <Marquee pauseOnHover reverse className="[--duration:30s]">
-                            {secondRow.map((review) => (
-                                <ReviewCard key={review.username} {...review} />
-                            ))}
-                        </Marquee>
-                        <div className="pointer-events-none absolute inset-y-0 left-0 w-1/4 bg-gradient-to-r from-background"></div>
-                        <div className="pointer-events-none absolute inset-y-0 right-0 w-1/4 bg-gradient-to-l from-background"></div>
-                        <div className="absolute hidden lg:block top-1/4 left-1/4 w-28 h-28 rounded-full bg-primary/80 -z-10 blur-[6rem]"></div>
-                        <div className="absolute hidden lg:block top-1/4 right-1/4 w-28 h-28 rounded-full bg-primary/80 -z-10 blur-[6rem]"></div>
-                    </div>
-                </div>
-            </Container>
-        </div>
-    )
-};
 
-const ReviewCard = ({
-    img,
-    name,
-    username,
-    review,
-}: {
-    img: string;
-    name: string;
-    username: string;
-    review: string;
-}) => {
-    return (
-        <figure className="relative w-64 cursor-pointer overflow-hidden rounded-xl border border-foreground/5 bg-neutral-50/[.05] hover:bg-foreground/10 p-4 transition-all duration-300 ease-in-out">
-            <div className="flex flex-row items-center gap-2">
-                <Image className="rounded-full" width="32" height="32" alt="" src={img} />
-                <div className="flex flex-col">
-                    <figcaption className="text-sm font-medium text-foreground">
-                        {name}
-                    </figcaption>
-                    <p className="text-xs font-medium text-foreground/40">{username}</p>
-                </div>
+                <h2 className="text-3xl md:text-4xl lg:text-5xl font-heading font-medium !leading-[1.1] mb-6 bg-gradient-to-br from-foreground to-foreground/80 bg-clip-text text-transparent">
+                    Don't Take It From Us
+                </h2>
+                <p className="text-lg md:text-xl text-muted-foreground/90 leading-relaxed max-w-2xl mx-auto">
+                    Hear What Our Students Say About Their Experience
+                </p>
             </div>
-            <blockquote className="mt-2 text-sm">{review}</blockquote>
-        </figure>
+
+            {/* Reviews Grid */}
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
+                {testimonials.map((testimonial, index) => (
+                    <div 
+                        key={index}
+                        className="group relative flex flex-col"
+                    >
+                        <div className="absolute -inset-px bg-gradient-to-r from-primary/20 to-violet-500/20 rounded-xl blur-sm opacity-0 transition-opacity"></div>
+                        <div className="relative flex flex-col p-6 rounded-xl border border-border/60 bg-card/30 backdrop-blur-sm">
+                            <p className="text-muted-foreground text-base leading-relaxed mb-6 italic">
+                                "{testimonial.quote}"
+                            </p>
+                            <div className="mt-auto">
+                                <h3 className="text-lg font-medium bg-gradient-to-r from-foreground to-foreground/80 bg-clip-text text-transparent">
+                                    {testimonial.name}
+                                </h3>
+                                <p className="text-sm text-muted-foreground mt-1">
+                                    {testimonial.role}
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                ))}
+            </div>
+
+            {/* Optional: Add a subtle animated gradient line */}
+            <div className="h-px w-full max-w-2xl mx-auto bg-gradient-to-r from-primary/50 via-violet-500/50 to-primary/50 mt-16 opacity-25"></div>
+        </section>
     );
 };
 
-export default Reviews
+export default Reviews;

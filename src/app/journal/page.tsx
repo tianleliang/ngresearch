@@ -1,5 +1,6 @@
 import { CTASection } from "@/components/ui/cta-section"
 import { Blog8 } from "@/components/blocks/blog8"
+import { Badge } from "@/components/ui/badge"
 
 export default function Journal() {
     return (
@@ -7,15 +8,36 @@ export default function Journal() {
             {/* Main Content */}
             <section className="w-full py-12 md:py-16 lg:py-20">
                 <div className="container max-w-6xl">
-                    <div className="mb-16">
-                        <h1 className="text-4xl md:text-5xl lg:text-6xl font-heading font-medium mb-6">
-                            Journal
-                        </h1>
-                        <p className="text-lg text-muted-foreground max-w-3xl">
-                            Dive into the world of high school research by exploring a wide range of research papers in the NextGen Journal. 
-                            Our bimonthly journal showcases the work of a few of the top NextGen scholars who demonstrate especially impressive 
-                            academic rigor and creativity.
-                        </p>
+                    <div className="relative mb-20">
+                        {/* Gradient background effect */}
+                        <div className="absolute -inset-4 bg-gradient-to-r from-primary/10 to-violet-500/10 rounded-2xl blur-2xl opacity-75 -z-10"></div>
+                        
+                        <div className="text-center">
+                            <div className="flex items-center justify-center gap-4 mb-8">
+                                <Badge 
+                                    variant="outline" 
+                                    className="text-base px-4 py-1.5 border-primary/20 bg-primary/5 hover:bg-primary/10"
+                                >
+                                    Research Papers
+                                </Badge>
+                            </div>
+
+                            <h1 className="text-2xl md:text-3xl lg:text-5xl font-heading font-medium !leading-[1.1] mb-8 bg-gradient-to-br from-foreground to-foreground/80 bg-clip-text text-transparent">
+                                NextGen Journal
+                            </h1>
+
+                            <div className="relative">
+                                <div className="absolute -inset-2 bg-gradient-to-r from-primary/20 to-violet-500/20 rounded-xl blur-lg opacity-25"></div>
+                                <p className="relative text-md md:text-base text-muted-foreground/90 leading-relaxed max-w-3xl mx-auto backdrop-blur-sm rounded-lg">
+                                    Dive into the world of high school research by exploring a wide range of research papers in the NextGen Journal. 
+                                    Our bimonthly journal showcases the work of a few of the top NextGen scholars who demonstrate especially impressive 
+                                    academic rigor and creativity.
+                                </p>
+                            </div>
+
+                            {/* Optional: Add a subtle animated gradient line */}
+                            <div className="h-px w-full max-w-3xl mx-auto bg-gradient-to-r from-primary/50 via-violet-500/50 to-primary/50 mt-12 opacity-25"></div>
+                        </div>
                     </div>
                     
                 </div>
@@ -84,7 +106,6 @@ export default function Journal() {
 
             {/* CTA Section */}
             <CTASection
-                badge={{ text: "Submit Your Research" }}
                 title="Ready to showcase your research?"
                 description="Apply for a chance to be featured in the NextGen Journal, an impressive addition to any resume."
                 action={{
