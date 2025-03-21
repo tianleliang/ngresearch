@@ -1,7 +1,6 @@
 import Link from "next/link";
 import { BlurText } from "../ui/blur-text";
 import { Button } from "../ui/button";
-import Image from "next/image";
 import Container from "../global/container";
 
 const Hero = () => {

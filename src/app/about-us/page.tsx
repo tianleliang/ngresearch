@@ -1,4 +1,4 @@
-import { Linkedin, TwitterIcon } from "lucide-react";
+import { Linkedin } from "lucide-react";
 import Link from "next/link";
 import { Badge } from "@/components/ui/badge";
 
@@ -7,7 +7,6 @@ interface TeamMember {
     role: string;
     bio: string;
     image: string;
-    twitter?: string;
     linkedin?: string;
 }
 
@@ -15,65 +14,43 @@ const teamMembers: TeamMember[] = [
     {
         name: "Prab Jayachandran",
         role: "Co-CEO",
-        bio: "Prab Jayachandran is a student at Zionsville Community High School and the Co-CEO of NextGen Research Institute. In addition to being a CoolEdge Senator and Coca-Cola Regional Finalist, he has done research for Stanford, IU, and Purdue in Economics, GIS, ML, and Computational Biology.",
+        bio: "Leading NextGen's vision and strategy, focusing on expanding research opportunities for high school students.",
         image: "/images/team/first.png",
-        twitter: "https://twitter.com/prab",
         linkedin: "https://linkedin.com/in/prab"
     },
     {
         name: "Nishant Gadde",
         role: "Co-CEO",
-        bio: "Nishant Gadde is a student at Jordan High School and the Co-CEO of NextGen Research Institute. He's done research at the University of Houston, Nvidia, Georgia Institute of Technology, CTU Prague, and did plenty of independent research in machine learning, applied math, photonic neural networks, and more.",
+        bio: "Driving innovation in research education and building partnerships with leading institutions.",
         image: "/images/team/second.png",
-        twitter: "https://twitter.com/nishant",
         linkedin: "https://linkedin.com/in/nishant"
     },
     {
         name: "Amrit Vignesh",
         role: "President",
-        bio: "Amrit Vignesh is the President of NextGen Research Institute and a freshman at Princeton University, majoring in Data Science. He has done research with UFlorida, UCF, Syracuse, GA Tech, presented at Carnegie Mellon, and collaborated with Princeton.",
+        bio: "Princeton University student leading program development and academic partnerships.",
         image: "/images/team/third.png",
-        twitter: "https://twitter.com/amrit",
         linkedin: "https://linkedin.com/in/amrit"
     },
     {
         name: "Rishi Kanaparti",
         role: "COO",
-        bio: "Rishi Kanaparti is a driven researcher at Georgia Tech, dedicated to pushing the boundaries of scientific discovery. With a passion for technology and medicine, Rishi contributes to groundbreaking projects, including work at Stride Labs.",
+        bio: "Managing operations and research programs at NextGen while pursuing research at Georgia Tech.",
         image: "/images/team/fourth.jpg",
-        twitter: "https://twitter.com/rishi",
         linkedin: "https://linkedin.com/in/rishi"
     },
     {
         name: "Arin Patil",
         role: "CMO",
-        bio: "Arin Patil is a student at Innovation Academy in Alpharetta, GA, passionate about digital marketing, finance, and business innovation. With over 4 million individual online impressions, Arin has made a significant impact through their work managing 8+ social media accounts and running a successful Digital Marketing Agency.",
+        bio: "Digital marketing expert managing NextGen's online presence and community engagement.",
         image: "/images/team/fifth.png",
-        twitter: "https://twitter.com/arin",
         linkedin: "https://linkedin.com/in/arin"
-    },
-    {
-        name: "Maisy Matthews",
-        role: "Outreach Director",
-        bio: "Maisy Matthews is a student at Midland High School and is President of the MHS National Honor Society. She serves as Class President as well as a member of the Midland Area Youth Action Council.",
-        image: "/images/team/sixth.png",
-        twitter: "https://twitter.com/maisy",
-        linkedin: "https://linkedin.com/in/maisy"
-    },
-    {
-        name: "Vasavi Suresh",
-        role: "Director of Marketing",
-        bio: "Vasavi is a talented marketing director with a strong background in social media management, having interned with various businesses to enhance their online presence. With college-level education in marketing, she has developed skills in creating impactful logos.",
-        image: "/images/team/seventh.png",
-        twitter: "https://twitter.com/vasavi",
-        linkedin: "https://linkedin.com/in/vasavi"
     },
     {
         name: "Shiv Patel",
         role: "Director of Research",
-        bio: "Shiv is a premed student at Florida State University. In high school, he has done various independent research that has led him to compete and become a finalist at Regeneron ISEF.",
+        bio: "Overseeing research initiatives and mentorship programs while studying at Florida State.",
         image: "/images/team/eigth.png",
-        twitter: "https://twitter.com/shiv",
         linkedin: "https://linkedin.com/in/shiv"
     }
 ];
@@ -81,81 +58,52 @@ const teamMembers: TeamMember[] = [
 export default function AboutUs() {
     return (
         <div className="flex flex-col items-center justify-center min-h-screen py-12 md:py-16 lg:py-24">
-            <div className="container max-w-6xl">
-                <div className="relative mb-20">
-                    {/* Gradient background effect */}
-                    <div className="absolute -inset-4 bg-gradient-to-r from-primary/10 to-violet-500/10 rounded-2xl blur-2xl opacity-75 -z-10"></div>
-                    
-                    <div className="text-center">
-                        <div className="flex items-center justify-center gap-4 mb-8">
-                            <Badge 
-                                variant="outline" 
-                                className="text-base px-4 py-1.5 border-primary/20 bg-primary/5 hover:bg-primary/10"
-                            >
-                                Our Team
-                            </Badge>
-                        </div>
-
-                        <h1 className="text-3xl md:text-3xl lg:text-5xl font-heading font-medium !leading-[1.1] mb-8 bg-gradient-to-br from-foreground to-foreground/80 bg-clip-text text-transparent">
-                            About Us
-                        </h1>
-
-                        <div className="relative">
-                            <div className="absolute -inset-2 bg-gradient-to-r from-primary/20 to-violet-500/20 rounded-xl blur-lg opacity-25"></div>
-                            <p className="relative text-lg md:text-xl text-muted-foreground/90 leading-relaxed max-w-2xl mx-auto backdrop-blur-sm rounded-lg">
-                                Learn more about NextGen Research Institute and our mission.
-                            </p>
-                        </div>
-
-                        {/* Optional: Add a subtle animated gradient line */}
-                        <div className="h-px w-full max-w-2xl mx-auto bg-gradient-to-r from-primary/50 via-violet-500/50 to-primary/50 mt-12 opacity-25"></div>
-                    </div>
+            <div className="container max-w-6xl px-4">
+                <div className="text-center mb-16">
+                    <h1 className="text-4xl md:text-5xl lg:text-6xl font-heading font-medium mb-6">
+                        Meet Our Team
+                    </h1>
+                    <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+                        The passionate individuals behind NextGen Research Institute, dedicated to transforming high school research.
+                    </p>
                 </div>
 
-                <section className="w-full py-16">
-                <div className="container max-w-5xl px-4">
-                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-                        {teamMembers.map((member) => (
-                            <div 
-                                key={member.name}
-                                className="group relative flex flex-col gap-4 rounded-lg overflow-hidden"
-                            >
-                                <div className="aspect-[3/2.5] w-full overflow-hidden rounded-lg">
-                                    <img
-                                        src={member.image}
-                                        alt={member.name}
-                                        className="h-full w-full object-cover transition-transform duration-300 group-hover:scale-105"
-                                    />
-                                </div>
-                                <div className="flex flex-col gap-2">
-                                    <div className="flex items-center justify-between">
-                                        <div>
-                                            <h3 className="text-lg font-medium">{member.name}</h3>
-                                            <p className="text-xs text-muted-foreground">{member.role}</p>
-                                        </div>
-                                        <div className="flex items-center gap-2">
-                                            {member.twitter && (
-                                                <Link href={member.twitter} target="_blank" className="text-muted-foreground hover:text-primary transition-colors">
-                                                    <TwitterIcon className="h-4 w-4" />
-                                                </Link>
-                                            )}
-                                            {member.linkedin && (
-                                                <Link href={member.linkedin} target="_blank" className="text-muted-foreground hover:text-primary transition-colors">
-                                                    <Linkedin className="h-4 w-4" />
-                                                </Link>
-                                            )}
-                                        </div>
-                                    </div>
-                                    <p className="text-muted-foreground text-xs leading-relaxed">
-                                        {member.bio}
-                                    </p>
-                                </div>
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    {teamMembers.map((member) => (
+                        <div 
+                            key={member.name}
+                            className="group relative bg-card/30 rounded-2xl overflow-hidden border border-border/50 transition-all duration-300 hover:border-primary/50"
+                        >
+                            <div className="aspect-square w-full overflow-hidden">
+                                <img
+                                    src={member.image}
+                                    alt={member.name}
+                                    className="h-full w-full object-cover object-center transition-transform duration-300 group-hover:scale-105"
+                                />
                             </div>
-                        ))}
-                    </div>
+                            <div className="p-6">
+                                <div className="flex items-center justify-between mb-1">
+                                    <h3 className="text-xl font-medium">{member.name}</h3>
+                                    {member.linkedin && (
+                                        <Link 
+                                            href={member.linkedin} 
+                                            target="_blank" 
+                                            className="text-muted-foreground hover:text-primary transition-colors"
+                                            aria-label={`${member.name}'s LinkedIn profile`}
+                                        >
+                                            <Linkedin className="h-5 w-5" />
+                                        </Link>
+                                    )}
+                                </div>
+                                <p className="text-primary/90 text-sm mb-4">{member.role}</p>
+                                <p className="text-muted-foreground text-sm leading-relaxed">
+                                    {member.bio}
+                                </p>
+                            </div>
+                        </div>
+                    ))}
                 </div>
-            </section>
             </div>
         </div>
-    )
+    );
 } 
