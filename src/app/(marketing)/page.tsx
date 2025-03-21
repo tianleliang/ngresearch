@@ -1,4 +1,4 @@
-import { Background, Companies, Connect, Container, CTA, Features, Hero, Perks, Pricing, Reviews, Wrapper } from "@/components";
+import { Background, Companies, Connect, Container, Features, Hero, Reviews, Wrapper } from "@/components";
 import WhyChoose from "@/components/marketing/why-choose";
 
 const HomePage = () => {

@@ -1,6 +1,6 @@
 import { CTASection } from "@/components/ui/cta-section"
 import { Badge } from "@/components/ui/badge"
-import { Features, Reviews, Wrapper } from "@/components";
+import { Wrapper } from "@/components";
 import NIRPStuff from "@/components/marketing/nirpstuff";
 import Image from "next/image";
 

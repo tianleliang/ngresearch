@@ -1,10 +1,8 @@
 "use client";
 
 import Container from "../global/container";
-import Icons from "../global/icons";
 import Images from "../global/images";
 import MagicCard from "../ui/magic-card";
-import { Ripple } from "../ui/ripple";
 
 const WhyChoose = () => {
     return (

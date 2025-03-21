@@ -3,7 +3,6 @@ import Link from "next/link";
 import Container from "../global/container";
 import Icons from "../global/icons";
 import Wrapper from "../global/wrapper";
-import { Button } from "../ui/button";
 import { Particles } from "../ui/particles";
 
 const Footer = () => {
