@@ -4,7 +4,7 @@ const testimonials = [
     {
         quote: "Connected me with amazing professors and research opportunities that transformed my academic journey.",
         name: "Aneesh Chintala",
-        role: "Researcher at The University of Houston"
+        role: "Researcher @ The University of Houston"
     },
     {
         quote: "I am grateful for the chance to collaborate with top professionals in my field. NextGen opened doors I didn't know existed.",

@@ -11,7 +11,7 @@ const Features = () => {
                     <h2 className="text-2xl md:text-4xl lg:text-5xl font-heading font-medium !leading-snug mt-6">
                     NextGen Research Institute
                     </h2>
-                    <p className="text-base md:text-lg text-center text-accent-foreground/80 mt-6">
+                    <p className="text-base md:text-lg text-center text-accent-foreground/60 mt-6">
                     Empowering High Schoolers with Academic Opportunities
                     </p>
                 </div>

@@ -23,7 +23,7 @@ const Companies = () => {
                     Schools that trust us
                 </h2>
                 <div className="mt-16 w-full relative overflow-hidden">
-                    <Marquee pauseOnHover className="[--duration:40s]">
+                    <Marquee className="[--duration:40s]">
                         <div className="flex items-center gap-16">
                             {schools.map((school) => (
                                 <div 
