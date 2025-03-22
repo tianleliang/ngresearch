@@ -1,4 +1,4 @@
-import { Background, Companies, Connect, Container, Features, Hero, Reviews, Wrapper } from "@/components";
+import { Background, Companies, Container, Features, Hero, Reviews, Wrapper } from "@/components";
 import WhyChoose from "@/components/marketing/why-choose";
 
 const HomePage = () => {
@@ -16,6 +16,7 @@ const HomePage = () => {
                 <Reviews />
             </Wrapper>
         </Background>
+        
     )
 };
 
