@@ -8,19 +8,19 @@ const features = [
         number: "1",
         title: "Showcase Research Papers",
         description: "NextGen Research Institute features highchoolers research papers in a monthly journal, providing exposure and opportunities for collaboration with college professors.",
-        image: "/images/cards/card4.png"
+        image: "/images/papers/paper1.png"
     },
     {
         number: "2",
         title: "Connect with Professors",
         description: "Our platform facilitates connections betweenhigh school students and college professors, opening doors to valuable research opportunities and mentorship.",
-        image: "/images/cards/card4.png"
+        image: "/images/papers/paper2.png"
     },
     {
         number: "3",
         title: "Expand Research Horizons",
         description: "By participating in NextGen Research Institute, students can broaden their research horizons, gain experience, and explore new academic opportunities.",
-        image: "/images/cards/card4.png"
+        image: "/images/papers/paper3.png"
     }
 ];
 
