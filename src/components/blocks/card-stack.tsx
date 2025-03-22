@@ -31,6 +31,13 @@ export default function CardStack() {
         offset: ["start end", "end start"]
     });
 
+    // Create transform functions for each card position
+    const topTransform0 = useTransform(scrollYProgress, [0, 1], [0, 0]);
+    const topTransform1 = useTransform(scrollYProgress, [0, 1], [375, 0]);
+    const topTransform2 = useTransform(scrollYProgress, [0, 1], [750, 0]);
+    
+    const scaleTransform = useTransform(scrollYProgress, [0, 0.7], [1, 0.9]);
+
     return (
         <div ref={containerRef} className="min-h-screen py-20 md:py-32">
             <div className="container max-w-6xl mx-auto px-4">
@@ -63,16 +70,8 @@ export default function CardStack() {
                                 key={index}
                                 className="absolute inset-0"
                                 style={{
-                                    top: useTransform(
-                                        scrollYProgress,
-                                        [0, 1],
-                                        [index * 375, 0]
-                                    ),
-                                    scale: useTransform(
-                                        scrollYProgress,
-                                        [0, 0.7],
-                                        [1, 0.9]
-                                    ),
+                                    top: index === 0 ? topTransform0 : index === 1 ? topTransform1 : topTransform2,
+                                    scale: scaleTransform
                                 }}
                             >
                                 <img
