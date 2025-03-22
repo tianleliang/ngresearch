@@ -159,7 +159,6 @@ const config = {
   			'ripple': 'ripple var(--duration,2s) ease calc(var(--i, 0)*.2s) infinite',
   			'spotlight': 'spotlight 2s ease .75s 1 forwards',
   			'loading': 'loading 0.6s linear infinite',
-  			marquee: 'marquee var(--duration) infinite linear',
   			'marquee-vertical': 'marquee-vertical var(--duration) linear infinite'
   		},
   		spacing: {
