@@ -7,9 +7,9 @@ interface RippleProps {
 }
 
 export const Ripple = React.memo(function Ripple({
-    mainCircleSize = 210,
+    mainCircleSize = 250,
     mainCircleOpacity = 0.24,
-    numCircles = 8,
+    numCircles = 15,
 }: RippleProps) {
     return (
         <div className="absolute inset-0 flex items-center justify-center [mask-image:linear-gradient(to_bottom,foreground,transparent)]">

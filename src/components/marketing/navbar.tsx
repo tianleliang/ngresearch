@@ -34,12 +34,12 @@ const Navbar = () => {
                     <div className="pt-1 flex items-center justify-between w-full">
                         {/* Logo and Name */}
                         <div className="flex items-center gap-4">
-                            <Link href="/" className="text-lg font-semibold text-foreground">
+                            <Link href="/" className="flex items-center gap-2">
                                 <Icons.icon className="w-auto h-5" />
-                            </Link>
                             <h1 className="hidden md:block text-sm lg:text-base">
                                 NextGen Research Institute
                             </h1>
+                            </Link>
                         </div>
 
                         {/* Desktop Navigation */}

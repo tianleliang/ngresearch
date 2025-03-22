@@ -1,8 +1,10 @@
 "use client";
 
+import { NotepadText } from "lucide-react";
 import Container from "../global/container";
 import Images from "../global/images";
 import MagicCard from "../ui/magic-card";
+import { Ripple } from "../ui/ripple";
 
 const WhyChoose = () => {
     return (
@@ -21,29 +23,33 @@ const WhyChoose = () => {
                 <div className="flex flex-col items-center gap-5 w-full">
                     <Container>
                         {/* Top large card */}
-                        <MagicCard particles={true} className="flex flex-col items-start w-full bg-primary/[0.08] mb-5">
-                            <div className="bento-card w-full flex-row gap-6">
-                                <div className="w-full h-52 relative">
-                                    <Images.ideation className="w-full h-full" />
-                                    <div className="w-40 h-40 rounded-full bg-primary/10 blur-3xl -z-10 absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2"></div>
+                        <MagicCard particles={true} className="flex flex-col items-start size-full bg-primary/[0.08]">
+                            <div className="bento-card relative flex flex-col justify-between min-h-80 w-full p-6">
+                                {/* Centered icon with ripple */}
+                                <div className="absolute inset-0 flex items-center justify-center">
+                                    <span className="text-muted-foreground group-hover:text-foreground relative z-10">
+                                        <NotepadText className="w-20 h-20" />
+                                    </span>
+                                    <Ripple />
                                 </div>
-                                <div className="flex flex-col mt-auto">
+
+                                {/* Text content at bottom */}
+                                <div className="flex flex-col mt-auto relative z-20">
                                     <h4 className="text-xl font-heading font-medium heading">
-                                    Publication Opportunities
+                                        Publication Opportunities
                                     </h4>
                                     <p className="text-sm md:text-base mt-2 text-muted-foreground">
-                                    Get your research papers published in our monthly journal.
+                                        Get your research papers published in our monthly journal.
                                     </p>
                                 </div>
                             </div>
                         </MagicCard>
-
                         {/* Bottom two equal cards */}
                         <div className="grid grid-cols-1 lg:grid-cols-2 w-full gap-5 mt-5">
                             <MagicCard particles={true} className="flex flex-col items-start w-full bg-primary/[0.08]">
                                 <div className="bento-card w-full flex-row gap-6">
                                     <div className="w-full h-40">
-                                        <Images.analytics className="w-full h-full" />
+                                        <Images.integration className="w-full h-full" />
                                     </div>
                                     <div className="flex flex-col">
                                         <h4 className="text-xl font-heading font-medium heading">
