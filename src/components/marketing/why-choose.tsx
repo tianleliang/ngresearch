@@ -11,12 +11,12 @@ const WhyChoose = () => {
     return (
         <div className="flex flex-col items-center justify-center py-12 md:py-16 lg:py-24 w-full">
             <Container>
-                <div className="flex flex-col items-center text-center max-w-2xl mx-auto">
+                <div className="flex flex-col items-center text-center max-w-5xl mx-auto">
                     <h2 className="text-2xl md:text-4xl lg:text-5xl font-heading font-medium !leading-snug mt-6">
                     Why choose NextGen?
                     </h2>
                     <p className="text-base md:text-lg text-center text-accent-foreground/60 mt-6">
-                    NextGen Research Institute offers unique opportunities for high school students to showcase their research and connect with academic professionals. Our platform serves as a bridge between talented young researchers and the academic community.
+                    At NextGen, our mission is to make research accessible for passionate students globally, prioritizing merit and true value over money. In alignment with this vision, we provide our services for less than 1% of the cost of other alternatives in hopes of fostering real enthusiasm and experience amongst our students. We have established a premier platform dedicated to empowering high school students with the best opportunities. Through our strategic partnerships with T20 universities and college consulting companies like IvyLine, we provide access to world-class research networks, fostering academic excellence and innovation for the next generation of scholars. Apply today or learn more below.
                     </p>
                 </div>
             </Container>

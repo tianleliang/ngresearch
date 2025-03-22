@@ -66,7 +66,7 @@ export const FOOTER_LINKS = [
     {
         title: "Contact",
         links: [
-            { name: "contact@nextgenresearch.org", href: "/privacy" },
+            { name: "contact@nextgenresearch.org", href: "mailto:contact@nextgenresearch.org" },
         ],
     },
 ];

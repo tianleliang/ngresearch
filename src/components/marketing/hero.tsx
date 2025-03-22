@@ -12,8 +12,7 @@ const Hero = () => {
       />
       <Container>
         <p className="text-sm sm:text-base lg:text-lg mt-4 text-accent-foreground/60 max-w-2xl mx-auto">
-          NextGen Education LLC publishes high school students research papers
-          to reward them with college professor experiences.
+        NextGen Education LLC is a premier platform dedicated to empowering high school researchers with exclusive publishing opportunities and connections to top institutions.
         </p>
       </Container>
       <Container>

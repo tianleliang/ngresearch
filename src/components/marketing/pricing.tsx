@@ -71,7 +71,7 @@ const Plan = ({
         if (plan === "monthly") {
             return monthlyPrice === 0 ? 0 : monthlyPrice;
         } else if (plan === "yearly") {
-            const discountedPrice = Math.round((yearlyPrice * 0.8) / 12);
+            const discountedPrice = ((yearlyPrice * 0.8) / 12);
             return yearlyPrice === 0 ? 0 : discountedPrice;
         }
         return 0;
