@@ -6,7 +6,7 @@ import Background from "./global/background";
 
 import Hero from "./marketing/hero";
 import Navbar from "./marketing/navbar";
-import Companies from "./marketing/schools";
+import Companies from "./marketing/companies";
 import Features from "./marketing/features";
 import Connect from "./marketing/connect";
 import Perks from "./marketing/perks";

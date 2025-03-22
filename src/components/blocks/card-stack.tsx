@@ -8,19 +8,19 @@ const features = [
         number: "1",
         title: "Showcase Research Papers",
         description: "NextGen Research Institute features highchoolers research papers in a monthly journal, providing exposure and opportunities for collaboration with college professors.",
-        image: "/images/cards/card3.png"
+        image: "/images/cards/card4.png"
     },
     {
         number: "2",
         title: "Connect with Professors",
         description: "Our platform facilitates connections betweenhigh school students and college professors, opening doors to valuable research opportunities and mentorship.",
-        image: "/images/cards/card2.png"
+        image: "/images/cards/card4.png"
     },
     {
         number: "3",
         title: "Expand Research Horizons",
         description: "By participating in NextGen Research Institute, students can broaden their research horizons, gain experience, and explore new academic opportunities.",
-        image: "/images/cards/card1.png"
+        image: "/images/cards/card4.png"
     }
 ];
 
@@ -32,9 +32,9 @@ export default function CardStack() {
     });
 
     // Create transform functions for each card position
-    const topTransform0 = useTransform(scrollYProgress, [0, 1], [0, 0]);
-    const topTransform1 = useTransform(scrollYProgress, [0, 1], [375, 0]);
-    const topTransform2 = useTransform(scrollYProgress, [0, 1], [750, 0]);
+    const topTransform0 = useTransform(scrollYProgress, [1, 0], [0, 0]);
+    const topTransform1 = useTransform(scrollYProgress, [1, 0], [0, 275]);
+    const topTransform2 = useTransform(scrollYProgress, [1, 0], [0, 550]);
     
     const scaleTransform = useTransform(scrollYProgress, [0, 0.7], [1, 0.9]);
 
@@ -47,7 +47,7 @@ export default function CardStack() {
                         {features.map((feature, index) => (
                             <div key={index} className="relative">
                                 <div className="flex items-start gap-4">
-                                    <span className="flex items-center justify-center w-12 h-12 rounded-full border border-primary/20 bg-primary/5 text-xl font-medium">
+                                    <span className="flex items-center justify-center w-12 h-8 rounded-full border border-primary/20 bg-primary/5 text-xl font-medium px-3">
                                         {feature.number}
                                     </span>
                                     <div className="space-y-2">
@@ -64,7 +64,7 @@ export default function CardStack() {
                     </div>
 
                     {/* Right side - Stacked Cards */}
-                    <div className="relative h-[700px] hidden md:block">
+                    <div className="relative h-[700px] md:block rotate-180">
                         {features.map((feature, index) => (
                             <motion.div
                                 key={index}

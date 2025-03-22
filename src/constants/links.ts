@@ -49,18 +49,18 @@ export const FOOTER_LINKS = [
         title: "Learn More",
         links: [
             { name: "Home", href: "/" },
-            { name: "About Us", href: "/" },
-            { name: "Journal", href: "/" },
-            { name: "Apply Here", href: "/" },
-            { name: "NIRP", href: "/" },
+            { name: "About Us", href: "/about-us" },
+            { name: "Journal", href: "/journal" },
+            { name: "Apply Here", href: "/apply-here" },
+            { name: "NIRP", href: "/nirp" },
         ],
     },
     {
         title: "Important Links",
         links: [
-            { name: "Journal Disc", href: "/blog" },
-            { name: "Privacy Policy", href: "/help-center" },
-            { name: "Terms of Service", href: "/community" },
+            { name: "Journal Disc", href: "https://docs.google.com/document/d/1yQ8wC52FALEsdI1vLSB8LtWQQpMG1C3YmSUWluSqwjI/edit?tab=t.0" },
+            { name: "Privacy Policy", href: "/privacy-policy" },
+            { name: "Terms of Service", href: "/tos" },
         ],
     },
     {

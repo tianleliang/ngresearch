@@ -28,8 +28,9 @@ export default function RootLayout({
                  <Navbar />
                  <main className="mx-auto w-full z-40 relative">
                     {children}
+                    <Footer />
                 </main>
-                <Footer />
+               
             </body>
         </html>
     );

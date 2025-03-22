@@ -18,8 +18,8 @@ const Hero = () => {
       </Container>
       <Container>
         <div className="flex items-center justify-center md:gap-x-6 mt-8">
-          <Button asChild size="lg" className="bg-[#1B2959]">
-            <Link href="/app">Learn More</Link>
+          <Button asChild size="lg" className="bg-[#9a3bc0]">
+            <Link href="/about-us">Learn More</Link>
           </Button>
           <Button
             asChild
@@ -27,7 +27,7 @@ const Hero = () => {
             variant="outline"
             className="hidden md:flex"
           >
-            <Link href="#">Apply Now</Link>
+            <Link href="/apply-here">Apply Now</Link>
           </Button>
         </div>
       </Container>
