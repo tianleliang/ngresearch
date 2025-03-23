@@ -56,6 +56,27 @@ const Navbar = () => {
                             <Link href="/nirp" className="text-sm lg:text-base text-muted-foreground hover:text-foreground transition-colors">
                                 NIRP
                             </Link>
+                            <Link 
+                                href="https://www.instagram.com/nextgenri/" 
+                                target="_blank" 
+                                className="flex items-center gap-1 text-sm lg:text-base text-muted-foreground hover:text-foreground transition-colors group"
+                                aria-label="Visit our Instagram"
+                            >
+                                <svg 
+                                    xmlns="http://www.w3.org/2000/svg" 
+                                    viewBox="0 0 24 24" 
+                                    fill="none" 
+                                    stroke="currentColor" 
+                                    strokeWidth="2" 
+                                    strokeLinecap="round" 
+                                    strokeLinejoin="round" 
+                                    className="h-4 w-4 group-hover:scale-110 transition-transform"
+                                >
+                                    <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                                    <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                                    <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                                </svg>
+                            </Link>
                         </nav>
 
                         {/* Mobile Menu Button */}
@@ -102,6 +123,29 @@ const Navbar = () => {
                                     onClick={() => setIsOpen(false)}
                                 >
                                     NIRP
+                                </Link>
+                                <Link
+                                    href="https://instagram.com/nextgenresearchinstitute"
+                                    target="_blank"
+                                    className="flex items-center gap-2 text-base text-muted-foreground hover:text-foreground transition-colors"
+                                    onClick={() => setIsOpen(false)}
+                                    aria-label="Visit our Instagram"
+                                >
+                                    <svg 
+                                        xmlns="http://www.w3.org/2000/svg" 
+                                        viewBox="0 0 24 24" 
+                                        fill="none" 
+                                        stroke="currentColor" 
+                                        strokeWidth="2" 
+                                        strokeLinecap="round" 
+                                        strokeLinejoin="round" 
+                                        className="h-5 w-5"
+                                    >
+                                        <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                                        <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                                        <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                                    </svg>
+                                    Instagram
                                 </Link>
                             </nav>
                         </div>

@@ -58,8 +58,8 @@ const Plan = ({
     id: string;
     title: string;
     desc: string;
-    monthlyPrice: string;
-    yearlyPrice: string;
+    monthlyPrice: number;
+    yearlyPrice: number;
     buttonText: string;
     features: string[];
     index: number;
@@ -67,9 +67,9 @@ const Plan = ({
     link: string;
 }) => {
 
-    const getDisplayedPrice = (plan: string, monthlyPrice: string, yearlyPrice: string) => {
+    const getDisplayedPrice = (plan: string, monthlyPrice: number, yearlyPrice: number) => {
         if (plan === "monthly") {
-            return monthlyPrice === "0.00" ? "0.00" : monthlyPrice;
+            return monthlyPrice === 0 ? "0.00" : monthlyPrice.toFixed(2);
         }
         return "0.00";
     };
@@ -103,12 +103,12 @@ const Plan = ({
                 <hr className="shrink-0 border-none w-full h-px bg-border" role="separator" />
                 <div className="relative flex flex-col flex-1 align-top w-full p-3 h-full break-words text-left gap-4">
                     <div className="flex items-end gap-2">
-                        <div className="flex items-end gap-1 w-40">
+                        <div className="flex items-end gap-1 w-48">
                             <span className="text-3xl md:text-4xl font-bold">
-                                ${displayedPrice === 0 ? 0 : <NumberTicker value={displayedPrice} />}
+                                {displayedPrice}
                             </span>
                             {/* In here 120 * 0.8 = 96 and /12 to get monthly price */}
-                            <span className="text-lg text-muted-foreground font-medium font-headin">
+                            <span className="text-lg text-muted-foreground font-medium">
                                 per {plan === "monthly" ? "appl." : "month"}
                             </span>
                         </div>

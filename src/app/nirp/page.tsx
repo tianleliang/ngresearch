@@ -56,6 +56,21 @@ export default function NIRP() {
                             </p>
                         </div>
 
+                        {/* Application button */}
+                        <div className="mt-8">
+                            <Button
+                                variant="default"
+                                size="lg"
+                                asChild
+                                className="relative overflow-hidden group"
+                            >
+                                <a href="/apply-here">
+                                    Apply Now
+                                    <span className="absolute inset-0 bg-gradient-to-r from-primary/20 to-violet-500/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></span>
+                                </a>
+                            </Button>            
+                        </div>
+
                         {/* Optional: Add a subtle animated gradient line */}
                         <div className="h-px w-full bg-gradient-to-r from-primary/50 via-violet-500/50 to-primary/50 mt-12 opacity-25"></div>
                     </div>
@@ -63,7 +78,7 @@ export default function NIRP() {
             </section>
 
             {/* Main Content */}
-            <section className="w-full py-12 md:py-16 lg:py-20">
+            <section id="learn-more" className="w-full py-12 md:py-16 lg:py-20">
                 <div className="container max-w-6xl px-4">
                     <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
                         {/* Program Details */}
