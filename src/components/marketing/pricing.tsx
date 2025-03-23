@@ -15,9 +15,9 @@ const Pricing = () => {
     return (
         <div className="flex flex-col items-center justify-center py-12 md:py-16 lg:py-24 w-full relative">
             <div className="text-center mb-8">
-                <h2 className="text-3xl md:text-4xl font-medium mb-3">
+                <h1 className="text-3xl md:text-4xl font-medium mb-3 bg-gradient-to-br from-foreground to-foreground/80 bg-clip-text text-transparent">
                     Choose Your Research Plan
-                </h2>
+                </h1>
                 <p className="text-muted-foreground text-lg">
                     (Fun Fact: Our closest alternative charges $4,000)
                 </p>

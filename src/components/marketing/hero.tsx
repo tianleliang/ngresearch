@@ -17,7 +17,7 @@ const Hero = () => {
       </Container>
       <Container>
         <div className="flex items-center justify-center md:gap-x-6 mt-8">
-          <Button asChild size="lg" className="bg-[#9a3bc0]">
+          <Button asChild size="lg" className="bg-gradient-to-r from-primary/20 to-violet-500/20  group-hover:opacity-100 transition-opacity duration-300">
             <Link href="/about-us">Learn More</Link>
           </Button>
           <Button

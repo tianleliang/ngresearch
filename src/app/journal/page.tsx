@@ -1,11 +1,10 @@
-import { CTASection } from "@/components/ui/cta-section"
 import { Blog8 } from "@/components/blocks/blog8"
 import { Badge } from "@/components/ui/badge"
 import { Button } from "@/components/ui/button"
 
 export default function Journal() {
     return (
-        <div className="flex flex-col items-center justify-center min-h-screen">
+        <div className="flex flex-col items-center justify-center min-h-screen py-12 md:py-16 lg:py-24">
             {/* Main Content */}
             <section className="w-full py-12 md:py-16 lg:py-20">
                 <div className="container max-w-6xl">
@@ -87,7 +86,7 @@ export default function Journal() {
                                 author: "NextGen Research Team",
                                 published: "Jul 2024",
                                 url: "https://drive.google.com/file/d/1cPZsBFgIw6OXdsAFst6cF-UkMBjmD7yp/view",
-                                image: "https://images.unsplash.com/photo-1555066931-bf19f8e1083d?w=800&h=450&fit=crop",
+                                image: "https://images.unsplash.com/photo-1516979187457-637abb4f9353?w=800&h=450&fit=crop",
                                 tags: ["AI", "Machine Learning", "Biology"]
                             },
                             {

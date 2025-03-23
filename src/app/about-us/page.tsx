@@ -64,13 +64,13 @@ const teamMembers: TeamMember[] = [
 
 export default function AboutUs() {
     return (
-        <div className="flex flex-col items-center justify-center min-h-screen py-12 md:py-16 lg:py-24">
+        <div className="flex flex-col items-center justify-center min-h-screen py-24 md:py-32 lg:py-36">
             <div className="container max-w-6xl px-4">
                 <div className="text-center mb-16">
-                    <h1 className="text-4xl md:text-5xl lg:text-6xl font-heading font-medium mb-6">
+                    <h1 className="text-2xl md:text-3xl lg:text-4xl font-medium !leading-[1.1] mb-3 bg-gradient-to-br from-foreground to-foreground/80 bg-clip-text text-transparent">
                         Meet Our Team
                     </h1>
-                    <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+                    <p className="max-w-2xl mx-auto text-muted-foreground text-lg">
                         The passionate individuals behind NextGen Research Institute, dedicated to transforming high school research.
                     </p>
                 </div>

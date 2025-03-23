@@ -21,7 +21,7 @@ function Feature({ title, description }: FeatureProps) {
 
 export default function NIRP() {
     return (
-        <div className="flex flex-col items-center justify-center min-h-screen">
+        <div className="flex flex-col items-center justify-center min-h-screen  py-12">
             {/* Hero Section */}
             <section className="w-full py-20 md:py-28 lg:py-32">
                 <div className="container max-w-6xl px-4">
