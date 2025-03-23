@@ -1,6 +1,7 @@
 import { CTASection } from "@/components/ui/cta-section"
 import { Blog8 } from "@/components/blocks/blog8"
 import { Badge } from "@/components/ui/badge"
+import { Button } from "@/components/ui/button"
 
 export default function Journal() {
     return (
@@ -104,17 +105,33 @@ export default function Journal() {
                     />
             </section>
 
-            {/* CTA Section */}
-            <CTASection
-                title="Ready to showcase your research?"
-                description="Apply for a chance to be featured in the NextGen Journal, an impressive addition to any resume."
-                action={{
-                    text: "Apply Now",
-                    href: "/apply-here",
-                    variant: "default"
-                }}
-                className="py-20"
-            />
+            <section className="w-full py-20">
+                <div className="container max-w-6xl px-4">
+                    <div className="relative mx-auto flex max-w-container flex-col items-center gap-6 px-8 py-12 text-center sm:gap-8 md:py-24">
+                        {/* Title */}
+                        <h2 className="text-3xl font-semibold sm:text-4xl">
+                            Ready to start your research journey?
+                        </h2>
+
+                        {/* Description */}
+                        <p className="text-muted-foreground max-w-2xl">
+                            Join NIRP and get professional help to take your research paper to the next level.
+                        </p>
+
+                        {/* Action Button */}
+                        <Button
+                            variant="default"
+                            size="lg"
+                            asChild
+                            className="mt-4"
+                        >
+                            <a href="/apply-here">Click Here To Apply</a>
+                        </Button>
+
+                        
+                    </div>
+                </div>
+            </section>
         </div>
     )
 } 

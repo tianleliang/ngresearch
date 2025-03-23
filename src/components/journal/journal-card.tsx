@@ -1,4 +1,5 @@
 import { cn } from "@/functions";
+import MagicCard from "../ui/magic-card";
 
 interface JournalEditionProps {
     title: string;
@@ -9,12 +10,13 @@ interface JournalEditionProps {
 
 export function JournalCard({ title, description, link, className }: JournalEditionProps) {
     return (
-        <div className={cn(
-            "group flex flex-col gap-6 p-8 rounded-2xl border bg-card/50 hover:bg-accent/5 transition-all duration-300",
-            "hover:shadow-lg hover:shadow-primary/5",
-            "relative overflow-hidden",
-            className
-        )}>
+        <MagicCard
+            className={cn(
+                className="flex flex-col items-start size-full bg-primary/[0.08]",
+                className
+            )}
+            particles={true}
+        >
             {/* Subtle gradient background */}
             <div className="absolute inset-0 bg-gradient-to-br from-primary/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
 
@@ -43,6 +45,6 @@ export function JournalCard({ title, description, link, className }: JournalEdit
                     </svg>
                 </a>
             </div>
-        </div>
+        </MagicCard>
     );
 } 

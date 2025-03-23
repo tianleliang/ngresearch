@@ -3,6 +3,7 @@ import { Badge } from "@/components/ui/badge"
 import { Wrapper } from "@/components";
 import NIRPStuff from "@/components/marketing/nirpstuff";
 import Image from "next/image";
+import { Button } from "@/components/ui/button"
 
 interface FeatureProps {
     title: string;
@@ -51,7 +52,7 @@ export default function NIRP() {
                             <div className="absolute -inset-2 bg-gradient-to-r from-primary/20 to-violet-500/20 rounded-xl blur-lg opacity-25"></div>
                             <p className="relative text-lg md:text-xl text-muted-foreground/90 leading-relaxed backdrop-blur-sm rounded-lg">
                                 Many students struggle with the research process due to a lack of knowledge and experience. 
-                                Many do not understand how to properly conduct research and turn it into a paper.
+                                Many do not understand how to properly conduct research and turn it into a paper. We walk students through the process.
                             </p>
                         </div>
 
@@ -111,7 +112,7 @@ export default function NIRP() {
                     </div>
                 </div>
             </section>
-            <Wrapper>
+            <Wrapper className="py-24">
             <NIRPStuff />
             </Wrapper>
             {/* Testimonial Section */}
@@ -130,19 +131,37 @@ export default function NIRP() {
                         </div>
                     </div>
                 </div>
+                
             </section>
 
             {/* CTA Section */}
-            <CTASection
-                title="Ready to start your research journey?"
-                description="Join NIRP and get professional help to take your research paper to the next level."
-                action={{
-                    text: "Click Here To Apply",
-                    href: "/apply-here",
-                    variant: "default"
-                }}
-                className="py-24"
-            />
+            <section className="w-full py-20">
+                <div className="container max-w-6xl px-4">
+                    <div className="relative mx-auto flex max-w-container flex-col items-center gap-6 px-8 py-12 text-center sm:gap-8 md:py-24">
+                        {/* Title */}
+                        <h2 className="text-3xl font-semibold sm:text-4xl">
+                            Ready to start your research journey?
+                        </h2>
+
+                        {/* Description */}
+                        <p className="text-muted-foreground max-w-2xl">
+                            Join NIRP and get professional help to take your research paper to the next level.
+                        </p>
+
+                        {/* Action Button */}
+                        <Button
+                            variant="default"
+                            size="lg"
+                            asChild
+                            className="mt-4"
+                        >
+                            <a href="/apply-here">Click Here To Apply</a>
+                        </Button>
+
+                        
+                    </div>
+                </div>
+            </section>
         </div>
     )
 } 

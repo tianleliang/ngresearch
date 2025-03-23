@@ -16,42 +16,49 @@ const teamMembers: TeamMember[] = [
         role: "Co-CEO",
         bio: "Leading NextGen's vision and strategy, focusing on expanding research opportunities for high school students.",
         image: "/images/team/first.png",
-        linkedin: "https://linkedin.com/in/prab"
+        linkedin: "https://www.linkedin.com/in/prabjayachandran/"
     },
     {
         name: "Nishant Gadde",
         role: "Co-CEO",
         bio: "Driving innovation in research education and building partnerships with leading institutions.",
         image: "/images/team/second.png",
-        linkedin: "https://linkedin.com/in/nishant"
+        linkedin: "https://www.linkedin.com/in/nishant-gadde-06ba51267/"
     },
     {
         name: "Amrit Vignesh",
         role: "President",
         bio: "Princeton University student leading program development and academic partnerships.",
         image: "/images/team/third.png",
-        linkedin: "https://linkedin.com/in/amrit"
+        linkedin: "https://www.linkedin.com/in/amritvignesh/"
     },
     {
         name: "Rishi Kanaparti",
         role: "COO",
         bio: "Managing operations and research programs at NextGen while pursuing research at Georgia Tech.",
         image: "/images/team/fourth.jpg",
-        linkedin: "https://linkedin.com/in/rishi"
+        linkedin: "https://www.linkedin.com/in/rishi-kanaparti123/"
     },
     {
         name: "Arin Patil",
         role: "CMO",
-        bio: "Digital marketing expert managing NextGen's online presence and community engagement.",
-        image: "/images/team/fifth.png",
-        linkedin: "https://linkedin.com/in/arin"
+        bio: "Digital marketing expert managing NextGen's online presence and community engagement. ",
+        image: "/images/team/fifth.jpeg",
+        linkedin: "https://www.linkedin.com/in/arin-patil/"
     },
     {
         name: "Shiv Patel",
         role: "Director of Research",
         bio: "Overseeing research initiatives and mentorship programs while studying at Florida State.",
         image: "/images/team/eigth.png",
-        linkedin: "https://linkedin.com/in/shiv"
+        linkedin: "https://www.linkedin.com/in/shiv-p-patel/"
+    },
+    {
+        name: "Tianle Liang",
+        role: "CTO",
+        bio: "Leading tech innovation, automation, and platform security/infrastructure to advance NextGen's cutting-edge advantage.",
+        image: "/images/team/ninth.jpg",
+        linkedin: "https://www.linkedin.com/in/tianle-liang-3770522b9/"
     }
 ];
 

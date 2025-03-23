@@ -6,20 +6,20 @@ import { useRef } from "react";
 const features = [
     {
         number: "1",
-        title: "Showcase Research Papers",
-        description: "NextGen Research Institute features highchoolers research papers in a monthly journal, providing exposure and opportunities for collaboration with college professors.",
+        title: "Choose a Path",
+        description: "Decide which of our two applications fit your needs. Our holistic application is for those without prior research to publish. Our publication application is for those with prior independent research.",
         image: "/images/papers/paper1.png"
     },
     {
         number: "2",
-        title: "Connect with Professors",
-        description: "Our platform facilitates connections betweenhigh school students and college professors, opening doors to valuable research opportunities and mentorship.",
+        title: " Submit an Application",
+        description: "Navigate to the apply tab on our website and click your desired package. For our holistic application, we ask for your grades, resume, and short essays, so be ready with those supplementals. For our publication pipeline, just submit an independent paper. After you have completed your application, our Ivy League advisors and mentors will get back to you within 3-4 weeks with a decision.",
         image: "/images/papers/paper2.png"
     },
     {
         number: "3",
-        title: "Expand Research Horizons",
-        description: "By participating in NextGen Research Institute, students can broaden their research horizons, gain experience, and explore new academic opportunities.",
+        title: " Connect & Expand Your Horizons",
+        description: "Take your first step towards research as a NextGen Scholar. Once we connect you with a research opportunity, you’re off to the races at whichever University or Startup you’re matched with! Your research roadmap will depend on the opportunity you’re matched with. No matter the match, we ensure a quality process that will help students get real world experience in the field of their passion and choice.",
         image: "/images/papers/paper3.png"
     }
 ];
@@ -33,8 +33,8 @@ export default function CardStack() {
 
     // Create transform functions for each card position
     const topTransform0 = useTransform(scrollYProgress, [1, 0], [0, 0]);
-    const topTransform1 = useTransform(scrollYProgress, [1, 0], [0, 275]);
-    const topTransform2 = useTransform(scrollYProgress, [1, 0], [0, 550]);
+    const topTransform1 = useTransform(scrollYProgress, [1, 0], [0, 300]);
+    const topTransform2 = useTransform(scrollYProgress, [1, 0], [0, 600]);
     
     const scaleTransform = useTransform(scrollYProgress, [0, 0.7], [1, 0.9]);
 

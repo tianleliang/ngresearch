@@ -51,7 +51,7 @@ const Blog8 = ({
   ],
 }: Blog8Props) => {
   return (
-    <section className="py-32">
+    <section className="pt-32">
       <div className="container flex flex-col items-center gap-16">
 
         <div className="grid gap-y-10 sm:grid-cols-12 sm:gap-y-12 md:gap-y-16 lg:gap-y-20">
@@ -59,12 +59,10 @@ const Blog8 = ({
             <Card
               key={post.id}
               className="order-last sm:order-first sm:col-span-12 lg:col-span-10 lg:col-start-2
-                border border-[rgba(124,124,124,0.2)] 
-                bg-card/30 hover:bg-card/50
+                border border-[rgba(124,124,124,0.2)] bg-card/30 hover:bg-card/50
                 backdrop-blur-sm transition-all duration-300
-                hover:border-[rgba(124,124,124,0.3)] 
-                hover:shadow-xl hover:shadow-primary/5
-                rounded-2xl p-8"
+                hover:border-[rgba(124,124,124,0.3)] hover:shadow-xl hover:shadow-primary/5
+                rounded-2xl p-6"
             >
               <div className="grid gap-y-6 sm:grid-cols-10 sm:gap-x-5 sm:gap-y-0 md:items-center md:gap-x-8 lg:gap-x-12">
                 <div className="sm:col-span-5">
@@ -105,13 +103,11 @@ const Blog8 = ({
                 </div>
                 <div className="order-first sm:order-last sm:col-span-5">
                   <a href={post.url} target="_blank" className="block overflow-hidden rounded-xl">
-                    <div className="aspect-[16/9] overflow-clip rounded-xl border border-[rgba(124,124,124,0.2)] transition-all duration-300 group-hover:border-[rgba(124,124,124,0.3)]">
-                      <img
-                        src={post.image}
-                        alt={post.title}
-                        className="h-full w-full object-cover transition-all duration-300 hover:scale-105 hover:opacity-80"
-                      />
-                    </div>
+                    <img
+                      src={post.image}
+                      alt={post.title}
+                      className="h-full w-full object-cover transition-all duration-300 hover:scale-105 hover:opacity-80"
+                    />
                   </a>
                 </div>
               </div>

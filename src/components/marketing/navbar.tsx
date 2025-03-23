@@ -28,17 +28,17 @@ const Navbar = () => {
 
             <header className={cn(
                 "fixed top-4 inset-x-0 mx-auto max-w-6xl px-4 z-[100]",
-                isOpen ? "h-[calc(100%-24px)]" : "h-12"
+                isOpen ? "h-auto" : "h-auto"
             )}>
-                <Wrapper className="backdrop-blur-lg rounded-xl lg:rounded-2xl border border-[rgba(124,124,124,0.2)] p-2">
-                    <div className="pt-1 flex items-center justify-between w-full">
+                <Wrapper className="backdrop-blur-lg rounded-xl lg:rounded-2xl border border-[rgba(124,124,124,0.2)]">
+                    <div className="flex items-center justify-between w-full h-10 px-2">
                         {/* Logo and Name */}
-                        <div className="flex items-center gap-4">
+                        <div className="flex items-center gap-2">
                             <Link href="/" className="flex items-center gap-2">
                                 <Icons.icon className="w-auto h-5" />
-                            <h1 className="hidden md:block text-sm lg:text-base">
-                                NextGen Research Institute
-                            </h1>
+                                <h1 className="hidden md:block text-sm lg:text-base">
+                                    NextGen Research Institute
+                                </h1>
                             </Link>
                         </div>
 
@@ -61,7 +61,7 @@ const Navbar = () => {
                         {/* Mobile Menu Button */}
                         <button
                             onClick={() => setIsOpen(!isOpen)}
-                            className="md:hidden p-2 text-muted-foreground hover:text-foreground transition-colors"
+                            className="md:hidden flex items-center justify-center text-muted-foreground hover:text-foreground transition-colors"
                         >
                             {isOpen ? (
                                 <XIcon className="h-6 w-6" />
@@ -73,32 +73,32 @@ const Navbar = () => {
 
                     {/* Mobile Menu */}
                     {isOpen && (
-                        <div className="md:hidden pt-4 pb-2">
+                        <div className="md:hidden border-t border-[rgba(124,124,124,0.1)] p-4">
                             <nav className="flex flex-col space-y-4">
                                 <Link
                                     href="/about-us"
-                                    className="text-base text-muted-foreground hover:text-foreground transition-colors px-2"
+                                    className="text-base text-muted-foreground hover:text-foreground transition-colors"
                                     onClick={() => setIsOpen(false)}
                                 >
                                     About Us
                                 </Link>
                                 <Link
                                     href="/journal"
-                                    className="text-base text-muted-foreground hover:text-foreground transition-colors px-2"
+                                    className="text-base text-muted-foreground hover:text-foreground transition-colors"
                                     onClick={() => setIsOpen(false)}
                                 >
                                     Journal
                                 </Link>
                                 <Link
                                     href="/apply-here"
-                                    className="text-base text-muted-foreground hover:text-foreground transition-colors px-2"
+                                    className="text-base text-muted-foreground hover:text-foreground transition-colors"
                                     onClick={() => setIsOpen(false)}
                                 >
                                     Apply Here
                                 </Link>
                                 <Link
                                     href="/nirp"
-                                    className="text-base text-muted-foreground hover:text-foreground transition-colors px-2"
+                                    className="text-base text-muted-foreground hover:text-foreground transition-colors"
                                     onClick={() => setIsOpen(false)}
                                 >
                                     NIRP

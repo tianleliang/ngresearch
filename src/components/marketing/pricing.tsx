@@ -58,8 +58,8 @@ const Plan = ({
     id: string;
     title: string;
     desc: string;
-    monthlyPrice: number;
-    yearlyPrice: number;
+    monthlyPrice: string;
+    yearlyPrice: string;
     buttonText: string;
     features: string[];
     index: number;
@@ -67,14 +67,11 @@ const Plan = ({
     link: string;
 }) => {
 
-    const getDisplayedPrice = (plan: string, monthlyPrice: number, yearlyPrice: number) => {
+    const getDisplayedPrice = (plan: string, monthlyPrice: string, yearlyPrice: string) => {
         if (plan === "monthly") {
-            return monthlyPrice === 0 ? 0 : monthlyPrice;
-        } else if (plan === "yearly") {
-            const discountedPrice = ((yearlyPrice * 0.8) / 12);
-            return yearlyPrice === 0 ? 0 : discountedPrice;
+            return monthlyPrice === "0.00" ? "0.00" : monthlyPrice;
         }
-        return 0;
+        return "0.00";
     };
 
     const displayedPrice = getDisplayedPrice(plan, monthlyPrice, yearlyPrice);
