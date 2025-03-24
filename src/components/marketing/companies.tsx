@@ -4,13 +4,13 @@ import { Marquee } from "../magicui/marquee";
 const Companies = () => {
     const schools = [
         { name: "Brown University", src: "/images/schools/brown.png", className: "scale-[0.85]" },
-        { name: "Columbia University", src: "/images/schools/columbia.png" },
-        { name: "Cornell University", src: "/images/schools/cornell.png" },
+        { name: "Columbia University", src: "/images/schools/columbia.png", className: "scale-[1.35]" },
+        { name: "Cornell University", src: "/images/schools/cornell.png", className: "scale-[1.25]" },
         { name: "Emory University", src: "/images/schools/emory.png" },
-        { name: "Georgia Tech", src: "/images/schools/gt.png" },
-        { name: "Harvard University", src: "/images/schools/harvard.png" },
-        { name: "Johns Hopkins University", src: "/images/schools/jhu.png" },
-        { name: "New York University", src: "/images/schools/nyu.png" },
+        { name: "Georgia Tech", src: "/images/schools/gt.png", className: "scale-[1.15]"},
+        { name: "Harvard University", src: "/images/schools/harvard.png", className: "scale-[1.3]" },
+        { name: "Johns Hopkins University", src: "/images/schools/jhu.png", className: "scale-[1.25]" },
+        { name: "New York University", src: "/images/schools/nyu.png", className: "scale-[1.5]" },
         { name: "Princeton University", src: "/images/schools/princeton.png" },
         { name: "Stanford University", src: "/images/schools/stanford.png" },
         { name: "Vanderbilt University", src: "/images/schools/vandy.png", className: "scale-90" },
@@ -28,7 +28,7 @@ const Companies = () => {
                             {schools.map((school) => (
                                 <div 
                                     key={school.name} 
-                                    className="relative w-36 h-14 flex items-center justify-center px-2 mr-16"
+                                    className="relative w-40 h-16 flex items-center justify-center px-2 mr-16"
                                 >
                                     <Image
                                         src={school.src}
