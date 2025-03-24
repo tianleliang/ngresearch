@@ -36,7 +36,7 @@ const Navbar = () => {
                         <div className="flex items-center gap-2">
                             <Link href="/" className="flex items-center gap-2">
                                 <Icons.icon className="w-auto h-5" />
-                                <h1 className="hidden md:block text-sm lg:text-base">
+                                <h1 className="text-sm lg:text-base">
                                     NextGen Research Institute
                                 </h1>
                             </Link>

@@ -129,8 +129,8 @@ const Plan = ({
                     </div>
                     <ul className="flex flex-col gap-2">
                         {features.map((feature, index) => (
-                            <li key={index} className="flex items-center gap-2">
-                                <CheckIcon aria-hidden="true" className="w-5 h-5 text-primary" />
+                            <li key={index} className="flex items-start gap-3">
+                                <CheckIcon aria-hidden="true" className="w-4 h-4 mt-1 flex-shrink-0 text-primary" />
                                 <p className="text-sm md:text-base text-muted-foreground">
                                     {feature}
                                 </p>

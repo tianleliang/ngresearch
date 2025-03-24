@@ -6,6 +6,7 @@ import Images from "../global/images";
 import MagicCard from "../ui/magic-card";
 import { Ripple } from "../ui/ripple";
 import Link from "next/link";
+import ProfessionalDevelopmentCard from "./professional-development-card";
 
 const WhyChoose = () => {
     return (
@@ -69,7 +70,7 @@ const WhyChoose = () => {
                             <MagicCard particles={true} className="flex flex-col items-start w-full bg-primary/[0.08]">
                                 <div className="bento-card w-full flex-row gap-6">
                                     <div className="w-full">
-                                        <Images.hash className="w-full h-40" />
+                                    <ProfessionalDevelopmentCard />
                                     </div>
                                     <div className="flex flex-col">
                                         <h4 className="text-xl font-heading font-medium heading">
