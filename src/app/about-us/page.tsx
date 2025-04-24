@@ -33,13 +33,6 @@ const teamMembers: TeamMember[] = [
         linkedin: "https://www.linkedin.com/in/amritvignesh/"
     },
     {
-        name: "Rishi Kanaparti",
-        role: "COO",
-        bio: "Managing operations and research programs at NextGen while pursuing research at Georgia Tech.",
-        image: "/images/team/fourth.jpg",
-        linkedin: "https://www.linkedin.com/in/rishi-kanaparti123/"
-    },
-    {
         name: "Arin Patil",
         role: "CMO",
         bio: "Digital marketing expert managing NextGen's online presence and community engagement. ",
@@ -47,18 +40,18 @@ const teamMembers: TeamMember[] = [
         linkedin: "https://www.linkedin.com/in/arin-patil/"
     },
     {
+        name: "Tianle Liang",
+        role: "CTO",
+        bio: "Leading tech innovation, automation, and platform security/infrastructure to advance NextGen's cutting-edge advantage.",
+        image: "/images/team/tianle.jpg",
+        linkedin: "https://www.linkedin.com/in/tianle-liang-3770522b9/"
+    },
+    {
         name: "Shiv Patel",
         role: "Director of Research",
         bio: "Overseeing research initiatives and mentorship programs while studying at Florida State.",
         image: "/images/team/eigth.png",
         linkedin: "https://www.linkedin.com/in/shiv-p-patel/"
-    },
-    {
-        name: "Tianle Liang",
-        role: "CTO",
-        bio: "Leading tech innovation, automation, and platform security/infrastructure to advance NextGen's cutting-edge advantage.",
-        image: "/images/team/ninth.jpg",
-        linkedin: "https://www.linkedin.com/in/tianle-liang-3770522b9/"
     }
 ];
 
