@@ -1,6 +1,9 @@
-# NextGen Research Institute Website
+# NextGen Research Institute Website (on hiatus since Jun 2025) 
 
 This repository contains the code for the NextGen Research Institute website, a platform designed to connect students with research opportunities and mentorship.
+
+Check it out at: https://ngresearch-kohl.vercel.app/
+Read our journals: https://ngresearch-kohl.vercel.app/journal
 
 ## Getting Started
 
